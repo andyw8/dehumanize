@@ -1,13 +1,18 @@
 Dehumanize
 ==========
 
-Introduction goes here.
+This plug-in adds a new method called 'dehumanize' to the Rails string inflections, roughly the reverse of the built-in 'humanize' method: It lowercases the full string and replaces spaces with underscores. It does not modify hyphens.
 
+Originally built to aid in writing Cucumber examples but probably has other uses.
 
 Example
 =======
 
-Example goes here.
+"Employee salary".dehumanize # => "employee_salary"
 
+Installation
+============
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+script/plugin install git://github.com/andyw8/dehumanize.git
+
+Copyright (c) 2009 Andy Waite, released under the MIT license
