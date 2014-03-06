@@ -1,6 +1,6 @@
 module ActiveSupport::Inflector
-  def dehumanize(the_string)
-    the_string.gsub(' ', '_').downcase
+  def dehumanize(string)
+    string.parameterize.underscore
   end
 end
 
